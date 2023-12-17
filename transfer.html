@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Transfer Money With No Worries</title>
+
+        <link rel="stylesheet" href="css/transfer.css">
+
+</head>
+
+<body>
+          <header>
+                    <div class="navigation-bar">
+                              <nav class="navbar">
+                                        <ul class="ul">
+                                                  <a class="links" href="home.html">
+                                                            Home
+                                                  </a>
+                                                  <a class="links" href="dashboard.html">
+                                                            Dashboard
+                                                  </a>
+                                                  <a class="links" href="transfer.html">
+                                                            Transfer
+                                                            Funds
+                                                  </a>
+                                                  <a class="links" href="pay-bills.html">
+                                                            Pay Bills
+                                                  </a>
+                                                  <a class="links" href="contact.html">
+                                                            Contact Us
+                                                  </a>
+                                                  <a class="links" href="calculator.html">
+                                                            Calculator
+                                                  </a>
+                                                  <a class="links" href="account-security-and-customer-support.html">
+                                                            Client Support
+                                                  </a>
+                                        </ul>
+
+                                        <div class="logout">
+                                                  <div class="toggle">
+                                                            <li class="toggle-btn links" onclick="toggleNavbar()">Toggle
+                                                                      Navigation</li>
+                                                  </div>
+                                                  <a class="links logoff" href="index.html">Logout</a>
+                                        </div>
+                              </nav>
+                    </div>
+          </header>
+
+          <main>
+                    <section class="flexed-div">
+                              <div class="product-row">
+                                        <div class="product"> <img src="" alt="">
+                                                  <div class="desc">
+                                                            <label for="" class="info">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing elit.
+                                                                      Aliquam minima dicta perferendis dignissimos, nemo
+                                                                      voluptas
+                                                                      expedita architecto culpa beatae atque.</label>
+                                                  </div>
+                                                  <a href="#" class="buy">
+                                                            <div class="purchase">Purchase Item</div>
+                                                  </a>
+                                        </div>
+
+                                        <div class="product"> <img src="" alt="">
+                                                  <div class="desc">
+                                                            <label for="" class="info">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing elit.
+                                                                      Aliquam minima dicta perferendis dignissimos, nemo
+                                                                      voluptas
+                                                                      expedita architecto culpa beatae atque.</label>
+                                                  </div>
+                                                  <a href="#" class="buy">
+                                                            <div class="purchase">Purchase Item</div>
+                                                  </a>
+                                        </div>
+
+                                        <div class="product"> <img src="" alt="">
+                                                  <div class="desc">
+                                                            <label for="" class="info">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing elit.
+                                                                      Aliquam minima dicta perferendis dignissimos, nemo
+                                                                      voluptas
+                                                                      expedita architecto culpa beatae atque.</label>
+                                                  </div>
+                                                  <a href="#" class="buy">
+                                                            <div class="purchase">Purchase Item</div>
+                                                  </a>
+                                        </div>
+                              </div>
+                    </section>
+
+                    <section class="transfer-funds-form">
+                              <form action="" class="fund-transfer" onsubmit="return validateForm()">
+                                        <div class="field">
+                                                  <div class="txt">
+                                                            <label for="">Your Account Number</label>
+                                                  </div>
+                                                  <div class="input">
+                                                            <input type="text" name="acc" id="acc"
+                                                                      value="0000 0000 0000 0000" disabled>
+                                                  </div>
+                                        </div>
+
+                                        <div class="field">
+                                                  <div class="txt">
+                                                            <label for="">Branch</label>
+                                                  </div>
+                                                  <div class="input">
+                                                            <select name="branch" id="branch">
+                                                                      <option value="">Select Branch</option>
+                                                                      <option value="1">Branch 1</option>
+                                                                      <option value="2">Branch 2</option>
+                                                                      <option value="3">Branch 3</option>
+                                                            </select>
+
+                                                            <span class="error branch-error"></span>
+                                                  </div>
+                                        </div>
+
+                                        <div class="field">
+                                                  <div class="txt">
+                                                            <label for="">Receiver's Account Number</label>
+                                                  </div>
+                                                  <div class="input">
+                                                            <input type="text" name="rec-acc" id="rec-acc">
+
+                                                            <span class="error rec-acc-error"></span>
+                                                  </div>
+                                        </div>
+
+                                        <div class="field">
+                                                  <div class="txt">
+                                                            <label for="">Amount</label>
+                                                  </div>
+                                                  <div class="input">
+                                                            <input type="text" name="amount" id="amount">
+
+                                                            <span class="error amt-error"></span>
+                                                  </div>
+                                        </div>
+
+                                        <div class="field">
+                                                  <div class="txt">
+                                                            <label for="">Transfer PIN</label>
+                                                  </div>
+                                                  <div class="input">
+                                                            <input type="text" name="pin" id="pin">
+
+                                                            <span class="error pin-error"></span>
+                                                  </div>
+                                        </div>
+
+                                        <div class="field">
+                                                  <div class="input">
+                                                            <input type="submit" value="Transfer Amount">
+                                                  </div>
+                                        </div>
+                              </form>
+                    </section>
+
+          </main>
+
+          <footer>
+                    <section class="footer">
+                              <div class="container">
+                                        <div class="left-column">
+                                                  <h1 class="title">Project Overview</h1>
+                                                  <p class="content">Locavore cardigan small batch roof party
+                                                            blue
+                                                            bottle blog
+                                                            meggings sartorial jean
+                                                            shorts kickstarter migas sriracha church-key synth
+                                                            succulents.
+                                                            Actually taiyaki neutra, distillery
+                                                            gastropub pok pok ugh.</p>
+                                        </div>
+
+                                        <div class="right-column">
+                                                  <h2 class="footer-title">Categories</h2>
+                                                  <nav class="footer-list">
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="dashboard.html">Dashboard</a></li>
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="calculator.html">Calculator</a>
+                                                            </li>
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="transfer.html">Transfer Money</a>
+                                                            </li>
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="account-security-and-customer-support.html">Client
+                                                                                Support</a></li>
+                                                  </nav>
+                                        </div>
+                              </div>
+                    </section>
+          </footer>
+</body>
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src="js/transer.js"></script>
+
+</html>

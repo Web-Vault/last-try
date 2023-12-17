@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>login -test</title>
+
+          <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+          <main>
+                    <div class="main-forms">
+                              <div class="form sign-in">
+                                        <form>
+                                                  <div class="label">Sign In </div>
+
+                                                  <div class="sign-choice">
+                                                            <div class="signin">Sign In</div>
+                                                            <div class="line"></div>
+                                                            <div class="signup">Sign Up</div>
+                                                  </div>
+
+                                                  <div class="main-form-container">
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">E-mail</label>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text" name="email"
+                                                                                          id="email"
+                                                                                          placeholder="E-mail">
+
+                                                                                <div class="error">
+                                                                                          <span id="email-error"></span>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">Password</label>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text" name="password"
+                                                                                          id="password"
+                                                                                          placeholder="password">
+
+                                                                                <div class="error">
+                                                                                          <span
+                                                                                                    id="password-error"></span>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <a class="forgot-pasword"> Forgot Your
+                                                                                          Password?</a>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="submit">
+                                                                                <a href="index.html">
+                                                                                          <input type="submit"
+                                                                                                    value="Sign In">
+                                                                                </a>
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                        </form>
+                              </div>
+
+                              <div class="form sign-up">
+                                        <form>
+                                                  <div class="label">Sign Up </div>
+
+                                                  <div class="sign-choice">
+                                                            <div class="signin">Sign In</div>
+                                                            <div class="line"></div>
+                                                            <div class="signup">Sign Up</div>
+                                                  </div>
+
+                                                  <div class="main-form-container">
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">E-mail</label>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text" name="email"
+                                                                                          id="signup-email"
+                                                                                          placeholder="E-mail">
+
+                                                                                <div class="error">
+                                                                                          <span
+                                                                                                    id="signup-email-error"></span>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">Password</label>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text" name="password"
+                                                                                          id="signup-password"
+                                                                                          placeholder="password">
+
+                                                                                <div class="error">
+                                                                                          <span
+                                                                                                    id="signup-password-error"></span>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field confirm-password">
+                                                                      <div class="txt">
+                                                                                <label for="">Confirm Password</label>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text"
+                                                                                          name="confirm-password"
+                                                                                          id="signup-confirm-password"
+                                                                                          placeholder="confirm-password">
+
+                                                                                <div class="error">
+                                                                                          <span
+                                                                                                    id="signup-confirm-password-error"></span>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="submit">
+                                                                                <!-- <a href="index.html"> -->
+                                                                                <input type="submit" value="Sign Up">
+                                                                                <!-- </a> -->
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                        </form>
+                              </div>
+
+                              <div class="form password-reset">
+                                        <form action="" onsubmit="reset_validation()">
+                                                  <div class="label">Reset Your Password </div>
+
+                                                  <div class="sign-choice">
+                                                            <div class="signin">Sign In</div>
+                                                            <div class="line"></div>
+                                                            <div class="signup">Reset Password</div>
+                                                  </div>
+
+                                                  <div class="main-form-container">
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">New-password</label>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text" name="new-password"
+                                                                                          id="new-password"
+                                                                                          placeholder="new-password">
+
+                                                                                <div class="error">
+                                                                                          <span
+                                                                                                    class="new-password-error"></span>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">Confirm Password</label>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text"
+                                                                                          name="confirm-new-password"
+                                                                                          id="confirm-new-password"
+                                                                                          placeholder="confirm-new-password">
+
+                                                                                <div class="error">
+                                                                                          <span
+                                                                                                    class="new-confirm-error"></span>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="submit">
+                                                                                <input type="submit" value="Reset">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                        </form>
+                              </div>
+                    </div>
+          </main>
+</body>
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

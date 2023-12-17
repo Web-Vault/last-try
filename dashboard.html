@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Dashboard - My Account</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+          <header>
+                    <div class="navigation-bar">
+                              <nav class="navbar">
+                                        <ul class="ul">
+                                                  <a class="links" href="home.html">
+                                                            Home
+
+                                                  </a>
+                                                  <a class="links" href="dashboard.html">
+                                                            Dashboard
+                                                  </a>
+                                                  <a class="links" href="transfer.html">
+                                                            Transfer
+                                                            Funds
+                                                  </a>
+                                                  <a class="links" href="pay-bills.html">
+                                                            Pay Bills
+                                                  </a>
+                                                  <a class="links" href="contact.html">
+                                                            Contact Us
+                                                  </a>
+                                                  <a class="links" href="calculator.html">
+                                                            Calculator
+                                                  </a>
+                                                  <a class="links" href="account-security-and-customer-support.html">
+                                                            Client Support
+                                                 </a>
+                                        </ul>
+
+                                        <div class="logout">
+                                                  <div class="toggle">
+                                                            <li class="toggle-btn links" onclick="toggleNavbar()">Toggle
+                                                                      Navigation</li>
+                                                  </div>
+                                                  <a class="links logoff" href="index.html">Logout</a>
+                                        </div>
+                              </nav>
+                    </div>
+          </header>
+
+          <section class="dashboard">
+                    <div class="profile-container">
+                              <div class="profile-icon"></div>
+
+                              <div class="name-clicker click">
+                                        <div class="name">Name</div>
+                              </div>
+
+                              <div class="email-clicker click">
+                                        <div class="name">email</div>
+                              </div>
+                    </div>
+
+                    <div class="details-container">
+                              <div class="info-content">
+                                        <span class="txt-name">Name : </span>
+                                        <span class="click-content">Aryan Lathigara</span>
+                              </div>
+
+                              <div class="info-content flex">
+                                        XXXX XXXX XXXX - <span class="type">Savings</span>
+                              </div>
+
+                              <section class="dummy-transactions">
+                                        <div class="h1">
+                                                  <h1>Recent transaction(s) </h1>
+                                        </div>
+                                        <div class="info-of-transaction">
+                                                  <span class="txt-info">$000 /-</span>
+
+                                                  <span class="val-info"> mm / dd / yyyy
+                                                            <span class="type">00:00:00</span>
+                                                  </span>
+                                        </div>
+
+                                        <div class="info-of-transaction">
+                                                  <span class="txt-info">Withdrawal</span>
+                                                  <div class="val-info">Completed</div>
+                                        </div>
+
+                                        <div class="info-of-transaction">
+                                                  <span class="txt-info">Tansaction ID </span>
+                                        </div>
+
+                                        <div class="hidden-section">
+
+                                                  <div class="info-of-transaction">
+                                                            <span class="txt-info">Receiver's ID :</span>
+                                                            <div class="val-info"> XXXX XXXX XXXX XXXX</div>
+                                                  </div>
+
+                                                  <div class="info-of-transaction">
+                                                            <span class="txt info">Method Of Payment : </span>
+                                                            <div class="val-info">Bank Transfer</div>
+                                                  </div>
+
+                                                  <div class="info-of-transaction">
+                                                            <span class="txt info">Remarks :</span>
+                                                            <div class="val-info">Lorem ipsum dolor sit amet consectetur
+                                                                      adipisicing elit. Possimus, vitae!</div>
+                                                  </div>
+
+                                        </div>
+                                        <div class="info-of-transaction more">
+                                                  <div class="more-info">more information...</div>
+                                        </div>
+                              </section>
+                    </div>
+          </section>
+
+          <div class="card-details">
+                    <section class="more">
+                              <div class="card-info">
+                                        <div class="click-to-add" value="Add Card">Add Card...</div>
+                              </div>
+                    </section>
+                    <div class="card-and-add-it">
+
+                              <section class="credit-card">
+                                        <div class="front">
+                                                  <div class="bank-logo">
+                                                            <img src="#" alt="logo" class="bank-icon">
+                                                  </div>
+                                                  <div class="chip">
+                                                            <img src="chip.png" alt="chip" class="chip-img">
+                                                  </div>
+                                                  <div class="card-number">
+                                                            <span class="number" id="number">xxxx xxxx xxxx xxxx</span>
+                                                  </div>
+                                                  <div class="expiry-date">
+                                                            <div class="date-txt">VALID-THRU</div>
+                                                            <div class="date" id="date">00 / 00</div>
+                                                  </div>
+                                                  <div class="holder-name">
+                                                            <span class="holder" id="holder">Aryan Lathigara</span>
+                                                  </div>
+                                        </div>
+
+                                        <div class="rear">
+                                                  <div class="customer-care">
+                                                            <span>customer care : 0000 000 0000</span>
+                                                  </div>
+
+                                                  <div class="black"></div>
+
+                                                  <div class="cvv-number" id="cvv-number"> 000 </div>
+
+                                                  <div class="auth">
+                                                            <div class="silver"></div>
+                                                            <div class="terms">
+                                                                      <p>authorised signature</p>
+                                                                      <p>not valid unless signatured</p>
+                                                                      <p>not valid for payment in foreign exchange in
+                                                                                Nepal and
+                                                                                Bhutan</p>
+                                                                      <p>this card is the property of the ----- bank. to
+                                                                                whom it
+                                                                                must be rerturned upon request, or if
+                                                                                found. The
+                                                                                use of this card is governed by ------
+                                                                                bank's
+                                                                                Terms and conditions governing credit
+                                                                                card
+                                                                                facilities. fi this card is found,
+                                                                                please cut it
+                                                                                into four pieces and deposit in any
+                                                                                branch of
+                                                                                ------ bank.</p>
+                                                                      <p>www.------bank.com</p>
+                                                            </div>
+                                                  </div>
+                                        </div>
+                              </section>
+
+                              <section class="add-to-card" id="card-form">
+                                        <form action="" class="card-form" onsubmit="return validateForm()">
+                                                  <div class="header">
+                                                            <h2>card-and-add-it</h2>
+                                                  </div>
+                                                  <div class="main">
+                                                            <div class="field">
+                                                                      <div class="input">
+                                                                                <input type="text" name="card-on-name"
+                                                                                          id="card-on-name"
+                                                                                          placeholder="Name On Card">
+                                                                                <span class="error"
+                                                                                          id="name-error"></span>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text" name="card-num"
+                                                                                          id="card-num"
+                                                                                          placeholder="Card Number [16 Digits]">
+                                                                                <span class="error"
+                                                                                          id="num-error"></span>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text" name="expiry"
+                                                                                          id="expiry"
+                                                                                          placeholder="Expiry Date [mm / yy]">
+                                                                                <span class="error"
+                                                                                          id="date-error"></span>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="text" name="cvv" id="cvv"
+                                                                                          placeholder="Enter CVV [3 Digits]">
+                                                                                <span class="error"
+                                                                                          id="cvv-error"></span>
+                                                                      </div>
+                                                                      <div class="input">
+                                                                                <input type="button" value="ADD" class="add-info-to-the-card" onclick="validateForm()">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                        </form>
+                              </section>
+                    </div>
+          </div>
+          <div class="transactions-and-schedulation">
+                    <div class="scheduled-transaction">
+                              <!-- <div class="transaction">
+                                        <section class="transaction-info">
+                                                  <div class="receiver-id">Receiver's Account Number</div>
+                                                  <div class="sent-amount">Amount /-</div>
+                                        </section>
+
+                                        <section class="transaction-info">
+                                                  <div class="remarks">remarks</div>
+                                                  <div class="time">Time</div>
+                                        </section>
+                              </div> -->
+                              <!-- <div class="transaction">
+                                                    <section class="transaction-info">
+                                                              <div class="receiver-id">Receiver's Account Number</div>
+                                                              <div class="sent-amount">Amount /-</div>
+                                                    </section>
+            
+                                                    <section class="transaction-info">
+                                                              <div class="remarks">remarks</div>
+                                                              <div class="time">Time</div>
+                                                    </section>
+                                          </div>
+                                          <div class="transaction">
+                                                    <section class="transaction-info">
+                                                              <div class="receiver-id">Receiver's Account Number</div>
+                                                              <div class="sent-amount">Amount /-</div>
+                                                    </section>
+            
+                                                    <section class="transaction-info">
+                                                              <div class="remarks">remarks</div>
+                                                              <div class="time">Time</div>
+                                                    </section>
+                                          </div> -->
+                    </div>
+
+                    <section class="scheduler">
+                              <form action="" class="schedule">
+                                        <div class="header">
+                                                  <h2>Schedule A Transaction</h2>
+                                        </div>
+                                        <div class="field">
+                                                  <div class="txt">
+                                                            <span class="name">Receiver's ACC.</span>
+                                                  </div>
+                                                  <div class="input">
+                                                            <input type="text" name="receiver" id="receiver1"
+                                                                      placeholder="Reveiver's Account Number">
+                                                  </div>
+                                        </div>
+
+                                        <div class="field">
+                                                  <div class="txt">
+                                                            <span class="name">Amount</span>
+                                                  </div>
+                                                  <div class="input">
+                                                            <input type="text" name="amount" id="amount1"
+                                                                      placeholder="Enter Amount To Send">
+                                                  </div>
+                                        </div>
+
+                                        <div class="field">
+                                                  <div class="txt">
+                                                            <span class="name">Remarks</span>
+                                                  </div>
+                                                  <div class="input">
+                                                            <input type="text" name="description" id="description1"
+                                                                      placeholder="Enter Amount To Send">
+                                                  </div>
+                                        </div>
+
+                                        <div class="field">
+                                                  <div class="txt">
+                                                            <span class="name">Send In :</span>
+                                                  </div>
+                                                  <div class="input timer">
+                                                            <input type="datetime-local" name="time-number"
+                                                                      id="countdownDateTime" placeholder="Enter Time">
+                                                  </div>
+                                        </div>
+
+                                        <div class="field">
+                                                  <div class="input">
+                                                            <input type="button" value="Schedule Transaction"
+                                                                      class="sc-transaction">
+                                                  </div>
+                                        </div>
+                              </form>
+                    </section>
+          </div>
+          <!-- <section class="flexed-div">
+                                <div class="product-row">
+                                          <div class="product"> <img src="" alt="">
+                                                    <div class="desc">
+                                                              <label for="" class="info">Lorem ipsum dolor sit amet
+                                                                        consectetur adipisicing elit.
+                                                                        Aliquam minima dicta perferendis dignissimos, nemo
+                                                                        voluptas
+                                                                        expedita architecto culpa beatae atque.</label>
+                                                    </div>
+                                                    <a href="#" class="buy">
+                                                              <div class="purchase">Purchase Item</div>
+                                                    </a>
+                                          </div>
+                                          <div class="product"> <img src="" alt="">
+                                                    <div class="desc">
+                                                              <label for="" class="info">Lorem ipsum dolor sit amet
+                                                                        consectetur adipisicing elit.
+                                                                        Aliquam minima dicta perferendis dignissimos, nemo
+                                                                        voluptas
+                                                                        expedita architecto culpa beatae atque.</label>
+                                                    </div>
+                                                    <a href="#" class="buy">
+                                                              <div class="purchase">Purchase Item</div>
+                                                    </a>
+            
+                                          </div>
+                                          <div class="product"> <img src="" alt="">
+                                                    <div class="desc">
+                                                              <label for="" class="info">Lorem ipsum dolor sit amet
+                                                                        consectetur adipisicing elit.
+                                                                        Aliquam minima dicta perferendis dignissimos, nemo
+                                                                        voluptas
+                                                                        expedita architecto culpa beatae atque.</label>
+                                                    </div>
+                                                    <a href="#" class="buy">
+                                                              <div class="purchase">Purchase Item</div>
+                                                    </a>
+            
+                                          </div>
+                                </div>
+                      </section> -->
+
+          <footer>
+                    <section class="footer">
+                              <div class="container">
+                                        <div class="left-column">
+                                                  <h1 class="title">Project Overview</h1>
+                                                  <p class="content">Locavore cardigan small batch roof party
+                                                            blue
+                                                            bottle blog
+                                                            meggings sartorial jean
+                                                            shorts kickstarter migas sriracha church-key synth
+                                                            succulents.
+                                                            Actually taiyaki neutra, distillery
+                                                            gastropub pok pok ugh.</p>
+                                        </div>
+
+                                        <div class="right-column">
+                                                  <h2 class="footer-title">Categories</h2>
+                                                  <nav class="footer-list">
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="dashboard.html">Dashboard</a></li>
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="calculator.html">Calculator</a>
+                                                            </li>
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="transfer.html">Transfer Money</a>
+                                                            </li>
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="account-security-and-customer-support.html">Client
+                                                                                Support</a></li>
+                                                  </nav>
+                                        </div>
+                              </div>
+                    </section>
+
+          </footer>
+</body>
+
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src="js/dashboard.js"></script>
+</html>

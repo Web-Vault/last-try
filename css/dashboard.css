@@ -1,0 +1,876 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+            .navbar {
+                    /* background-color: #333; */
+                    display: flex;
+                    color: #000;
+                    padding: 1%;
+                    margin-bottom: 1%;
+                    border-radius: 0.251rem;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+                    background-color: #dce1deff;
+
+          }
+
+          ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: left;
+                    padding: 0;
+                    margin: 0;
+          }
+
+          .ul {
+                    flex-basis: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: left;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    border-radius: 0.251rem;
+                    list-style-type: none;
+
+                    background-color: #ccc;
+          }
+
+          .links {
+                    padding: 1%;
+                    text-decoration: none;
+                    color: #000;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+          }
+
+          .links:hover {
+                    background-color: #333;
+                    color: #fff;
+                    cursor: pointer;
+          }
+
+          .logout {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    list-style-type: none;
+                    flex-basis: 15%;
+                    margin: 0 auto;
+                    padding: 0;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    border-radius: 0.251rem;
+
+                    background-color: #ccc;
+          }
+
+          .logoff {
+                    /* display: flex; */
+                    /* justify-content: space-between; */
+                    padding: 6%;
+                    width: 100%;
+                    text-align: center;
+                    /* margin-right: 10%; */
+          }
+
+          /* Button styles */
+          .toggle-btn {
+                    display: none;
+          }
+
+          .toggle {
+                    display: flex;
+                    justify-content: end;
+          }
+          /*  */
+
+          .product-row {
+                    padding: 1%;
+                    display: flex;
+                    justify-content: space-between;
+                    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+
+          }
+
+          .product {
+                    margin: 1%;
+                    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+          }
+
+          .product>img {
+                    width: 100%;
+                    height: 300px;
+                    border: 1px solid black;
+          }
+
+          .desc {
+                    border: 1px solid black;
+                    padding: 1%;
+                    text-align: justify;
+          }
+
+          .info {
+                    font-size: large;
+                    text-align: right;
+          }
+
+          .purchase {
+                    border: 1px solid black;
+                    /* margin-right: 5%; */
+                    padding: 10%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    bottom: 0;
+                    transition: padding 0.5s ease;
+          }
+
+          .purchase:hover {
+                    padding-bottom: 5%;
+                    justify-content: center;
+                    /* transition: all; */
+          }
+
+          /*  */
+
+          .dashboard {
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 0.251rem;
+                    display: flex;
+                    justify-content: center;
+                    padding: 1%;
+
+                    background-color: #dce1deff;
+          }
+
+          .h1 {
+                    text-align: center;
+          }
+
+          .profile-container {
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 0.251rem;
+                    height: max-content;
+                    padding: 2%;
+                    margin: 1%;
+                    flex-basis: 30%;
+
+                    background-color: #ccc;
+          }
+
+          .profile-icon {
+                    /* border: 1px solid black; */
+                    border-radius: 100%;
+                    height: 220px;
+                    width: 220px;
+                    padding: 1%;
+                    margin: 1% auto;
+                    background-color: beige;
+          }
+
+          .click {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    padding: 1%;
+                    font-size: large;
+                    margin: 1%;
+                    background-color: #333;
+                    border-radius: 0.51rem;
+                    color: white;
+                    transition: 0.3s ease;
+                    /* border: 1px solid black; */
+          }
+
+          .click:hover {
+                    transform: scale(110%);
+                    cursor: pointer;
+          }
+
+          .name {
+                    margin-left: 10%;
+                    padding: 3%;
+          }
+
+          .details-container {
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 0.251rem;
+                    margin: 1%;
+                    padding: 1%;
+                    flex-basis: 70%;
+
+                    background-color: #ccc;
+          }
+
+          .info-content {
+                    /* border: 1px solid black; */
+                    border-radius: 0.215rem;
+                    padding: 2%;
+                    margin: 1%;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+                    background-color: #fff;
+          }
+
+          .type {
+                    margin-left: 2%;
+                    font-size: 13px;
+                    color: #333;
+          }
+
+          .dummy-transactions {
+                    /* border: 1px solid black; */
+                    padding: 2%;
+                    margin: 1%;
+
+          }
+
+          .info-of-transaction {
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 0.215rem;
+                    padding: 2%;
+                    margin: 2% 1%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    background-color: #fff;
+          }
+
+          .val-info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-basis: 40%;
+          }
+
+          .hidden-section {
+                    display: none;
+          }
+
+          .more {
+              box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+              background-color:#ccc;
+          }
+
+          .more,
+          .card {
+                    border: none;
+                    padding: 0%;
+                    margin: 2% 1%;
+                    display: flex;
+                    justify-content: space-between;
+                    justify-content: end;
+          }
+
+          .more-info,
+          .card-info {
+                    /* border: 1px solid black; */
+                    padding: 17px;
+                    border-radius: 00.51rem;
+                    transition: 0.5s ease;
+                    margin-top: 1%;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    margin-right: 3%;
+
+                    background-color: #fff;
+          }
+
+          .more-info:hover,
+          .card-info:hover {
+                    background-color: #333;
+                    color: white;
+                    cursor: pointer;
+          }
+
+
+          .card-details > .more {
+            background-color: #fff;
+        }
+          /*  */
+
+          .card-details {
+                    margin: 1% 0;
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 0.251rem;
+
+                    /* background-color: #dce1deff; */
+          }
+
+          .credit-card {
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 1%;
+                    display: flex;
+          }
+
+          .front,
+          .rear {
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+                    /* border-radius: ; */
+                    /* padding: 1%; */
+                    margin: 2% auto;
+                    border-radius: 1rem;
+                    max-width: 420px;
+                    max-height: 245px;
+                    /* min-height: 220px; */
+                    min-width: 420px;
+
+                    background-color: #fff;
+          }
+
+
+          .bank-logo {
+                    /* border: 1px solid black; */
+                    /* color: #fff;
+                    background-color: #333; */
+                    /* border-radius: 1rem 1rem 0 0; */
+                    display: flex;
+                    justify-content: end;
+                    padding: 2%;
+          }
+
+          .bank-icon {
+                    /* border: 1px solid black; */
+                    padding: 1%;
+          }
+
+
+          .chip {
+                    /* border: 1px solid black; */
+                    background: #333;
+                    color: #fff;
+                    padding: 3%;
+          }
+
+          .chip-img {
+                    padding: 1%;
+                    /* border: 1px solid black; */
+          }
+
+
+          .card-number {
+                    /* border: 1px solid black; */
+                    color: #fff;
+                    background-color: #333;
+                    padding: 2%;
+                    display: flex;
+                    justify-content: center;
+          }
+
+          .number {
+                    /* border: 1px solid black; */
+                    padding: 1%;
+          }
+
+
+          .expiry-date {
+                    /* border: 1px solid black; */
+                    padding: 1%;
+                    text-align: center;
+          }
+
+          .holder-name {
+                    /* border: 1px solid black; */
+                    color: #fff;
+                    background-color: #333;
+                    border-radius: 0 0 0.91rem 0.91rem;
+                    padding: 3%;
+          }
+
+          .holder {
+                    padding: 1%;
+                    /* border: 1px solid black; */
+          }
+
+          /*  */
+
+          .customer-care {
+                    /* border: 1px solid black; */
+                    font-size: small;
+                    display: flex;
+                    justify-content: center;
+          }
+
+          .black {
+                    /* border: 1px solid black; */
+                    margin: 1% 0;
+                    padding: 5%;
+                    background-color: #333;
+          }
+
+          .cvv-number {
+                    /* border: 1px solid black; */
+                    width: 70%;
+                    padding: 2%;
+                    background-color: #333;
+                    color: #fff;
+                    text-align: end;
+          }
+
+          .auth {
+                    /* border: 1px solid black; */
+                    margin: 1% 0;
+                    padding: 0;
+                    display: flex;
+                    height: 50%;
+          }
+
+          .silver {
+                    /* border: 1px solid black; */
+                    background-color: silver;
+                    flex-basis: 15%;
+                    margin: 6% 2%;
+                    border-radius: 0.5rem;
+          }
+
+          .terms {
+                    /* border: 1px solid black; */
+                    flex-basis: 85%;
+                    margin: 1%;
+                    /* width: 100%; */
+          }
+
+          .terms>p {
+                    padding: 0 5px;
+                    margin: 0;
+                    font-size: 10px;
+                    text-align: justify;
+          }
+
+          /* card form */
+
+          form {
+                    max-width: 400px;
+                    margin: 50px auto;
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          }
+
+          .header h2 {
+                    color: #333;
+                    text-align: center;
+          }
+
+          .field {
+                    margin-top: 20px;
+          }
+
+          .input {
+                    margin-bottom: 15px;
+          }
+
+          .input input {
+                    width: 100%;
+                    padding: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border: 1px solid #333;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+          }
+
+          .input input[type="submit"] {
+                    background-color: #333;
+                    border-radius: 0.521rem;
+                    color: #fff;
+                    cursor: pointer;
+          }
+
+          .main {
+                    padding: 10px;
+          }
+
+          .card-and-add-it {
+                    display: flex;
+                    padding: 0;
+                    justify-content: space-around
+                              /* border: 1px solid black; */
+          }
+
+          .add-to-card {
+                    /* border: 1px solid black; */
+                    margin: 1px;
+                    flex-basis: 30%;
+                    display: none;
+          }
+
+          .error {
+                    color: red;
+          }
+
+          /* transactions */
+
+          .schedule {
+                    /* border: 1px solid black; */
+                    max-width: 25%;
+                    margin: 1% auto;
+                    padding: 2%;
+          }
+
+          .scheduled-transaction {
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 0.251rem;
+                    margin: 1% 0;
+                    padding: 3%;
+
+                    background-color: #dce1deff;
+          }
+
+          .scheduler {
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    margin: 1% 0;
+                    padding: 3%;
+
+                    background-color: #dce1deff;
+          }
+
+          .scheduled-transaction {
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin: 1% 0;
+                    padding: 1%;
+          }
+
+          .transaction {
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+                    border-radius: 0.251rem;
+                    max-height: max-content;
+                    min-height: max-content;
+                    flex-basis: 29%;
+                    padding: 2%;
+                    margin: 1% 0;
+
+                    background-color: #fff;
+          }
+
+          .transaction-info {
+                    /* border: 1px solid black; */
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 0.251rem;
+                    padding: 5% 0;
+                    margin: 1% 0;
+                    display: flex;
+                    justify-content: space-around;
+          }
+
+          /* footer */
+
+          .footer {
+                    color: #000;
+                    font-size: 16px;
+                    line-height: 1.6;
+                    display: flex;
+                    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+          }
+
+          .container {
+                    display: flex;
+                    /* flex-wrap: wrap; */
+                    padding: 60px 15px;
+                    margin: 0 auto;
+                    box-sizing: border-box;
+                    justify-content: space-evenly;
+                    background-color: #fff;
+
+          }
+
+          .left-column {
+                    flex-basis: 40%;
+                    padding: 3%;
+                    border-bottom: 1px solid #cbd5e0;
+                    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+
+          }
+
+          .title {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+
+          }
+
+          .content {
+                    margin-bottom: 20px;
+          }
+
+          .right-column {
+                    border-top: 1px solid #cbd5e0;
+                    flex-basis: 40%;
+                    padding: 3%;
+                    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+
+          }
+
+          .footer-title {
+                    font-weight: bold;
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+
+          }
+
+          .footer-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: -1px;
+          }
+
+          .footer-item {
+                    width: 50%;
+                    margin-bottom: 1px;
+          }
+
+          .footer-link {
+                    color: #4a5568;
+                    text-decoration: none;
+                    transition: color 0.3s ease-in-out;
+          }
+
+          .footer-link:hover {
+                    color: #2d3748;
+          }
+
+          /*  */
+
+          @media screen and (max-width: 1200px) {
+                    .credit-card {
+                              flex-direction: column;
+                              align-items: flex-start;
+                    }
+
+                    .front,
+                    .rear {
+                              max-width: 40%;
+                              min-width: 40%;
+                              /* height: max-content; */
+                    }
+
+                    .add-to-card {
+                              flex-basis: 30%;
+                    }
+
+                    .schedule {
+                              max-width: 40%;
+                    }
+
+                    .scheduled-transaction {
+                              padding: 1%;
+                    }
+
+                    .transaction {
+                              flex-basis: 29%;
+                    }
+          }
+
+          @media only screen and (max-width: 1030px) {
+                    .credit-card {
+                              margin: 1% auto;
+                              padding: 15% 0;
+                              flex-direction: column;
+                    }
+
+                    .front,
+                    .rear {
+                              margin: 2% auto;
+                              max-width: 40%;
+                              min-width: 40%
+                    }
+
+                    /*  */
+
+                    .card-and-add-it {
+                              flex-direction: column;
+                    }
+
+                    .add-to-card {
+                              flex-basis: 100%;
+                    }
+
+                    /*  */
+
+                    .schedule {
+                              max-width: 75%;
+                    }
+
+                    .scheduled-transaction {
+                              padding: 1%;
+                    }
+
+                    .transaction {
+                              flex-basis: 29%;
+                    }
+          }
+
+
+          @media only screen and (max-width: 699px) {
+
+                    .front,
+                    .rear {
+                              max-width: 85%;
+                              min-width: 85%;
+                              height: auto;
+                    }
+
+                    .navbar {
+                              display: block;
+                    }
+
+                    .ul {
+                              flex-direction: column;
+                              padding: 1%;
+                              text-align: left;
+                              display: none;
+                    }
+
+                    .links {
+                              margin: 1% 0;
+                              padding: 2%;
+                    }
+
+                    .logoff {
+                              flex-basis: 20%;
+                    }
+
+                    .logout {
+                              flex-basis: 100%;
+                              justify-content: space-between;
+                    }
+
+                    .toggle-btn {
+                              display: block;
+                              margin: 1% 0;
+                              padding: 10px;
+                              /* background-color: #333; */
+                              color: #000;
+                              border: none;
+                              border-radius: 5px;
+                              cursor: pointer;
+                    }
+
+
+                    /*  */
+
+                    .product-row {
+                              flex-direction: column;
+                    }
+
+                    .product>img {
+                              height: auto;
+                    }
+
+                    .desc {
+                              padding: 5%;
+                              margin: 1%;
+                    }
+
+                    .purchase {
+                              padding: 5%;
+                    }
+
+                    /*  */
+
+                    .dashboard {
+                              flex-direction: column;
+                    }
+
+                    .profile-container {
+                              flex-basis: 100%;
+                    }
+
+                    .profile-icon {
+                              height: 150px;
+                              width: 150px;
+                              margin: auto;
+                    }
+
+                    .click {
+                              width: 150px;
+                              margin: 1% auto;
+                    }
+
+                    /*  */
+
+                    .schedule {
+                              max-width: 80%;
+                    }
+
+                    .scheduled-transaction {
+                              padding: 1%;
+                    }
+
+                    .transaction {
+                              flex-basis: 80%;
+                              margin: 1%;
+                    }
+
+                    .transaction-info {
+                              flex-direction: row;
+                    }
+
+                    .receiver-id,
+                    .sent-amount,
+                    .time,
+                    .remarks {
+                              /* border: 1px solid #333; */
+                              /* margin: 0.5%; */
+                              padding: 1%;
+                    }
+
+                    /*  */
+
+                    .container {
+                              flex-direction: column;
+                    }
+
+                    .right-column {
+                              margin-top: 5%;
+                              border: none;
+                    }
+          }
+
+          @media screen and (max-width: 470px) {
+                    .credit-card {
+                              flex-direction: column;
+                              align-items: center;
+                    }
+
+                    .front,
+                    .rear {
+                              max-width: 100%;
+                              min-width: 100%;
+                    }
+
+                    /*  */
+
+                    .schedule {
+                              max-width: 100%;
+                    }
+
+                    .scheduled-transaction {
+                              padding: 2%;
+                    }
+
+                    .transaction {
+                              flex-basis: 45%;
+                              margin: 1%;
+                    }
+          }

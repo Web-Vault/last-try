@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Pay Your Bills With No Worries</title>
+
+          <link rel="stylesheet" href="css/pay.css">
+
+</head>
+
+<body>
+          <header>
+                    <div class="navigation-bar">
+                              <nav class="navbar">
+                                        <ul class="ul">
+                                                  <a class="links" href="home.html">
+                                                            Home
+
+                                                  </a>
+                                                  <a class="links" href="dashboard.html">
+                                                            Dashboard
+                                                  </a>
+                                                  <a class="links" href="transfer.html">
+                                                            Transfer
+                                                            Funds
+                                                  </a>
+                                                  <a class="links" href="pay-bills.html">
+                                                            Pay Bills
+                                                  </a>
+                                                  <a class="links" href="contact.html">
+                                                            Contact Us
+                                                  </a>
+                                                  <a class="links" href="calculator.html">
+                                                            Calculator
+                                                  </a>
+                                                  <a class="links" href="account-security-and-customer-support.html">
+                                                            Client Support
+                                                  </a>
+                                        </ul>
+
+                                        <div class="logout">
+                                                  <div class="toggle">
+                                                            <li class="toggle-btn links" onclick="toggleNavbar()">Toggle
+                                                                      Navigation</li>
+                                                  </div>
+                                                  <a class="links logoff" href="index.html">Logout</a>
+                                        </div>
+                              </nav>
+                    </div>
+          </header>
+
+          <main>
+                    <section class="flexed-div">
+                              <div class="product-row">
+                                        <div class="product"> <img src="" alt="">
+                                                  <div class="desc">
+                                                            <label for="" class="info">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing elit.
+                                                                      Aliquam minima dicta perferendis dignissimos, nemo
+                                                                      voluptas
+                                                                      expedita architecto culpa beatae atque.</label>
+                                                  </div>
+                                                  <a href="#" class="buy">
+                                                            <div class="purchase">Purchase Item</div>
+                                                  </a>
+                                        </div>
+
+                                        <div class="product"> <img src="" alt="">
+                                                  <div class="desc">
+                                                            <label for="" class="info">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing elit.
+                                                                      Aliquam minima dicta perferendis dignissimos, nemo
+                                                                      voluptas
+                                                                      expedita architecto culpa beatae atque.</label>
+                                                  </div>
+                                                  <a href="#" class="buy">
+                                                            <div class="purchase">Purchase Item</div>
+                                                  </a>
+                                        </div>
+
+                                        <div class="product"> <img src="" alt="">
+                                                  <div class="desc">
+                                                            <label for="" class="info">Lorem ipsum dolor sit amet
+                                                                      consectetur adipisicing elit.
+                                                                      Aliquam minima dicta perferendis dignissimos, nemo
+                                                                      voluptas
+                                                                      expedita architecto culpa beatae atque.</label>
+                                                  </div>
+                                                  <a href="#" class="buy">
+                                                            <div class="purchase">Purchase Item</div>
+                                                  </a>
+                                        </div>
+                              </div>
+                    </section>
+
+                    <div class="main">
+                              <form action="" class="form" id="pay-form" onsubmit="return validateForm()">
+                                        <div class="p1">
+                                                  <div class="field">
+                                                            <div class="txt">
+                                                                      <label for="">Receiver's Account Number</label>
+                                                            </div>
+
+                                                            <div class="input">
+                                                                      <select name="rec-acc" id="rec-acc">
+                                                                                <option value="">Select</option>
+                                                                                <option value="1">xxxx xxxx xxxx xxxx
+                                                                                </option>
+                                                                                <option value="2">xxxx xxxx xxxx xxxx
+                                                                                </option>
+                                                                                <option value="3">xxxx xxxx xxxx xxxx
+                                                                                </option>
+                                                                                <option value="4">xxxx xxxx xxxx xxxx
+                                                                                </option>
+                                                                      </select>
+
+                                                                      <span class="error rec-acc-error"></span>
+                                                            </div>
+                                                  </div>
+
+                                                  <div class="field">
+                                                            <div class="txt">
+                                                                      <label for="">Amount</label>
+                                                            </div>
+
+                                                            <div class="input">
+                                                                      <input type="text" name="amt" id="amt"
+                                                                                placeholder="Enter Amount">
+                                                                      <span class="error amt-error"></span>
+                                                            </div>
+                                                  </div>
+
+                                                  <div class="field">
+                                                            <div class="txt">
+                                                                      <label for="">Method Of Payment</label>
+                                                            </div>
+
+                                                            <div class="input">
+                                                                      <select name="payment" id="payment">
+                                                                                <option value="">Payment Method</option>
+                                                                                <option value="1">PayTm / PhonePe
+                                                                                </option>
+                                                                                <option value="2">UPI</option>
+                                                                                <option value="3">Card</option>
+                                                                      </select>
+                                                                      <span class="error method-error"></span>
+                                                            </div>
+                                                  </div>
+                                        </div>
+
+                                        <div class="p2">
+                                                  <div class="pay1">
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">Paytm / PhonePe
+                                                                                          Number</label>
+                                                                      </div>
+
+                                                                      <div class="input">
+                                                                                <input type="text" name="pytm-phpe"
+                                                                                          id="pytm-phpe"
+                                                                                          placeholder="Payytm / PhonePe Number">
+                                                                                <span
+                                                                                          class="error pytm-phpe-error"></span>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">Remarks</label>
+                                                                      </div>
+
+                                                                      <div class="input">
+                                                                                <textarea name="remarks" id="remarks"
+                                                                                          cols="18" rows="6"></textarea>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="input">
+                                                                                <input type="submit" value="PAY"
+                                                                                          onclick="return pay()">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+
+                                                  <div class="pay2">
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">UPI ID</label>
+                                                                      </div>
+
+                                                                      <div class="input">
+                                                                                <input type="text" name="upi" id="upi"
+                                                                                          placeholder="UPI ID">
+                                                                                <span class="error upi-error"></span>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">UPI PIN</label>
+                                                                      </div>
+
+                                                                      <div class="input">
+                                                                                <input type="text" name="upin" id="upin"
+                                                                                          placeholder="UPI PIN">
+                                                                                <span class="error upin-error"></span>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">Remarks</label>
+                                                                      </div>
+
+                                                                      <div class="input">
+                                                                                <textarea name="remarks" id="remarks"
+                                                                                          cols="18" rows="6"></textarea>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="input">
+                                                                                <input type="submit" value="PAY"
+                                                                                          onclick="return pay()">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+
+                                                  <div class="pay3">
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">Last 4 Digits Of
+                                                                                          Card</label>
+                                                                      </div>
+
+                                                                      <div class="input">
+                                                                                <input type="text" name="4-digit"
+                                                                                          id="4-digit"
+                                                                                          placeholder="Last 4-digit of Your Card">
+                                                                                <span class="error digit-error"></span>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">CVV</label>
+                                                                      </div>
+
+                                                                      <div class="input">
+                                                                                <input type="text" name="cvv" id="cvv"
+                                                                                          placeholder="Enter CVV">
+                                                                                <span class="error cvv-error"></span>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="txt">
+                                                                                <label for="">Remarks</label>
+                                                                      </div>
+
+                                                                      <div class="input">
+                                                                                <textarea name="remarks" id="remarks"
+                                                                                          cols="18" rows="6"></textarea>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="field">
+                                                                      <div class="input">
+                                                                                <input type="submit" value="PAY"
+                                                                                          class="final-pay"
+                                                                                          onclick="return pay()">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                        </div>
+                              </form>
+                    </div>
+          </main>
+
+          <footer>
+                    <section class="footer">
+                              <div class="container">
+                                        <div class="left-column">
+                                                  <h1 class="title">Project Overview</h1>
+                                                  <p class="content">Locavore cardigan small batch roof party blue
+                                                            bottle blog
+                                                            meggings sartorial jean
+                                                            shorts kickstarter migas sriracha church-key synth
+                                                            succulents.
+                                                            Actually taiyaki neutra, distillery
+                                                            gastropub pok pok ugh.
+                                                  </p>
+                                        </div>
+
+                                        <div class="right-column">
+                                                  <h2 class="footer-title">Categories</h2>
+                                                  <nav class="footer-list">
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="dashboard.html">Dashboard</a></li>
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="calculator.html">Calculator</a>
+                                                            </li>
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="transfer.html">Transfer Money</a>
+                                                            </li>
+                                                            <li class="footer-item"><a class="footer-link"
+                                                                                href="account-security-and-customer-support.html">Client
+                                                                                Support</a></li>
+                                                  </nav>
+                                        </div>
+                              </div>
+                    </section>
+
+          </footer>
+</body>
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src="js/pay.js"></script>
+
+</html>

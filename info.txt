@@ -1,0 +1,277 @@
+
+more info of pages as in book - 20 dec
+
+-----------------------------------------------------------
+
+color theme : 
+
+/*
+*/
+
+-----------------------------------------------------------
+
+1] 
+form page :
+          two forms : 
+                    signup  |  login 
+
+                    login page : form , forgot password -> when click , section.show() enter email -> if valid , reset password.
+
+                    change via link | don't have account
+
+2]  
+home page : 
+          slider at top : cotnaining slogans and text for different pags : pay , calaculator , faq 
+
+          flexed div : key features : account security -> redirected to two factor authentication 
+                                                  customer support -> re-directed to a form page to snd message to bank
+                                                  contact and locations -> re-directed to contact us page.
+
+          navigation bar : home  , dashboard , transfer funds , pay bills , contact us , calculator , log out 
+
+          offer slider : for show off and to increase the length of the page. 
+
+          footer : 
+
+3]
+dashboard page :
+          navigation bar : home , dashboard , transfer funds , pay bills , contact us , calculator . log out 
+
+           flexed div : key features : account security -> redirected to two factor authentication 
+                                                   customer support -> re-directed to a form page to snd message to bank
+                                                   contact and locations -> re-directed to contact us page.
+
+          dashboard as in book - 19 fab
+
+          footer
+
+4]
+transfer fund page :
+          navigation bar : home , dashboard , transfer funds , pay bills , contact us , calculator , log out 
+
+           flexed div : key features : account security -> redirected to two factor authentication 
+                                                   customer support -> re-directed to a form page to snd message to bank
+                                                   contact and locations -> re-directed to contact us page.
+
+          nonsense banner on secure transfer method  #sastapromotion
+
+          form as in book - 16 april   
+
+          footer
+
+5]
+pay bill page :
+                    navigation bar : home , dashboard , transfer funds , pay bills , contact us , calculator , log out 
+
+                     flexed div : key features : account security -> redirected to two factor authentication 
+                                                             customer support -> re-directed to a form page to snd message to bank
+                                                             contact and locations -> re-directed to contact us page.
+
+                    form as in book - 2 dec 
+
+                    footer
+
+6]
+contact us page :
+           navigation bar : home , dashboard , transfer funds , pay bills , contact us , calculator , log out 
+
+                     flexed div : key features : account security -> redirected to two factor authentication 
+                                                             customer support -> re-directed to a form page to snd message to bank
+                                                             contact and locations -> re-directed to contact us page.
+                    
+                    faq section - ready from previous
+
+                    send message / ask for query form as in book - old footer
+
+                    footer
+
+7]
+calculator page :
+            navigation bar : home , dashboard , transfer funds , pay bills , contact us , calculator , log out 
+
+                     flexed div : key features : account security -> redirected to two factor authentication 
+                                                             customer support -> re-directed to a form page to snd message to bank
+                                                             contact and locations -> re-directed to contact us page.
+
+                    nonsense banner for calculator.
+
+                    calaculator section with two option : calculator , emi calculator 
+
+                    footer
+
+8]
+account security & customer support :
+          text only : timepass unwanted page with text only with second nav bar 
+
+          navigation bar : home , dashboard , transfer funds , pay bills , contact us , calculator , log out 
+
+          flexed div : key features : account security -> redirected to two factor authentication 
+                                                  customer support -> re-directed to a form page to snd message to bank
+                                                  contact and locations -> re-directed to contact us page.
+
+          secondary nav bar : account security , customer support , privacy & policy.  
+
+          i ] account security - 
+                    information about online frauds and cautions 
+
+          ii ] customer support : 
+                    chat type page with ai: 
+                              5 option on screen answer will shown as user selects the option
+                              call center number : +91 000 000 0000 (clickable)
+                              email id : info@timepass.com (clickable)
+                              address : time pass, 3rd floor, abc building, xyz street, mumbai, india.
+          
+          iii ] privacy & policy :
+                    from chatgpt - as skillsync().
+
+          footer
+
+
+=
+
+
+=
+
+
+=
+
+
+=
+
+
+=
+
+
+=
+
+=
+
+
+=
+
+
+=
+
+
+=
+
+
+=
+
+snippet generated : 
+
+9]
+transfer funds page :
+header : logo of timepass
+title : Transfer Funds
+sub title : Easy way to transfer money across banks or wallets
+flexed div :
+left side : form to enter amount , source bank details , destination bank details .
+right side :
+image of person holding card in hand
+text below image : "Transferring money is easy"
+footer
+10]
+pay bill page :
+header : logo of timepass
+title : Pay Bills Online
+sub title : Pay your bills online with ease
+flexed div :
+left side : form to enter amount , name of service provider , phone number , email id .
+right side :
+image of person sitting at desk
+text below image : "Paying bills has never been easier."
+footer
+11]
+contact us page :
+header : logo of timepass
+title : Contact Us
+sub title : Get help when you need it most
+flexed div :
+left side : form to fill up name , email id , message
+right side :
+image of person talking to a friend
+text below image : "We're here for you whenever you need help."
+footer
+12]
+about us page :
+header : logo of timepass
+title : About Time Pass
+sub title : We are passionate about making life simple and enjoyable
+flexed div :
+left side : text about our company
+right side :
+image of people working together
+text below image : "Our mission is to make the world simpler by providing services that everyone can use."
+footer
+13]
+login page :
+header : logo of timepass
+title : Login
+sub title : Enter your username and password to access your account.
+flexed div :
+left side : form to enter username and password
+right side :
+image of person typing on keyboard
+text below image : "Welcome back, please login to continue using our services."
+footer
+14]
+signup page :
+header : logo of timepass
+title : Sign Up
+sub title : Create an account to start using our services today.
+flexed div :
+left side : form to create new user details (name , email id , password)
+right side :
+image of person creating a new account
+text below image : "It's easy as 1-2-3! Just follow these steps to get started."
+footer
+15]
+forgot password page :
+header : logo of timepass
+title : Forgot Password ?
+sub title : Don't worry we got you covered.
+flexed div :
+left side : form to reset password with security questions
+right side :
+image of person looking at phone
+text below image : "Just answer some quick questions and we will send you a link to reset your password."
+footer
+16]
+dashboard page :
+header : logo of timepass
+title : Dashboard
+sub title : Welcome to your dashboard
+flexed div :
+left side :
+image of person sitting in front of computer
+text below image : "Here you can see all your bookings and manage them easily"
+right side :
+image of person standing up from desk
+text below image : "You also have options to add or cancel any booking here"
+footer
+17]
+booking page :
+header : logo of timepass
+title : Book Now
+sub title : Choose the date and time for your session
+flexed div :
+left side :
+form to choose date and time
+right side :
+image of person choosing date and time
+text below image : "Select the date and time that suits you best"
+footer
+18]
+profile page :
+header : logo of timepass
+title : Profile
+sub title : Update your profile information
+flexed div :
+left side :
+form to update name, address, contact number etc.
+right side :
+image of person updating info on website
+text below image : "Update your personal details here"
+footer
+

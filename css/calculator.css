@@ -87,54 +87,81 @@ ul {
 
 /*  key features */
 
-.product-row {
-          padding: 1%;
-          display: flex;
-          justify-content: space-between;
-          /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+.main-section {
+  color: #374151;
+  /* background-color: #dce1deff; */
+  padding: 2rem 10rem;
+  /* border: 1px solid black; */
+}
+
+.content-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+}
+
+.custom-card {
+  flex: 0 0 calc(33.3333% - 1rem);
+}
+
+.card-inner {
+  border-radius: 0.375rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #ccc;
+  padding: 1rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon>img {
+  width: 100%;
+  border-radius: 1rem;
 
 }
 
-.product {
-          margin: 1%;
-          /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1E293B;
 }
 
-.product>img {
-          width: 100%;
-          height: 300px;
-          border: 1px solid black;
+.card-content {
+  flex-grow: 1;
 }
 
-.desc {
-          border: 1px solid black;
-          padding: 1%;
-          text-align: justify;
+.card-text {
+  line-height: 1.5;
 }
 
-.info {
-          font-size: large;
-          text-align: right;
+.card-link {
+  margin-top: 0.75rem;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-.purchase {
-          border: 1px solid black;
-          /* margin-right: 5%; */
-          padding: 10%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          bottom: 0;
-          transition: 0.5s ease;
-}
-
-.purchase:hover {
-          transform: scale(120%);
-          background: #ccc;
-          color: #000;
-          text-decoration: none;
-}
-
 
 /* footer */
 
